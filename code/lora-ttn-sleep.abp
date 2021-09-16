@@ -3,50 +3,35 @@
 <Pages collapsible-pages="yes" drawer-with-page="yes">
 <Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1440">
 <PageBlocks>
-<Block genus-name="number" id="610">
-<Label>15000</Label>
-<Location>
-<X>426</X>
-<Y>624</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="609" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
-</Plug>
-</Block>
-<Block genus-name="serial_print" id="985">
+<Block genus-name="sleep" id="609">
 <Location>
 <X>248</X>
 <Y>537</Y>
 </Location>
 <BeforeBlockId>809</BeforeBlockId>
-<AfterBlockId>626</AfterBlockId>
 <Sockets num-sockets="2">
-<BlockConnector con-block-id="986" connector-kind="socket" connector-type="string" init-type="string" label="Text" position-type="single"/>
-<BlockConnector con-block-id="987" connector-kind="socket" connector-type="boolean" init-type="boolean" label="neue Zeile" position-type="single"/>
+<BlockConnector con-block-id="610" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+<BlockConnector con-block-id="611" connector-kind="socket" connector-type="boolean" init-type="boolean" label="WLAN RF" position-type="single"/>
 </Sockets>
 </Block>
-<Block genus-name="true" id="987">
-<Label>true</Label>
+<Block genus-name="digital-high" id="611">
 <Location>
-<X>422</X>
+<X>426</X>
 <Y>564</Y>
 </Location>
 <Plug>
-<BlockConnector con-block-id="985" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+<BlockConnector con-block-id="609" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
 </Plug>
 </Block>
-<Block genus-name="message" id="986">
-<Label>starte deep sleep</Label>
+<Block genus-name="number" id="610">
+<Label>15000</Label>
 <Location>
-<X>422</X>
+<X>426</X>
 <Y>540</Y>
 </Location>
 <Plug>
-<BlockConnector con-block-id="985" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="single"/>
+<BlockConnector con-block-id="609" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
 </Plug>
-<Sockets num-sockets="1">
-<BlockConnector connector-kind="socket" connector-type="string" init-type="string" label="" position-type="single"/>
-</Sockets>
 </Block>
 <Block genus-name="delay" id="1159">
 <Location>
@@ -66,47 +51,6 @@
 </Location>
 <Plug>
 <BlockConnector con-block-id="1159" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
-</Plug>
-</Block>
-<Block genus-name="delay" id="626">
-<Location>
-<X>248</X>
-<Y>591</Y>
-</Location>
-<BeforeBlockId>985</BeforeBlockId>
-<AfterBlockId>609</AfterBlockId>
-<Sockets num-sockets="1">
-<BlockConnector con-block-id="627" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
-</Sockets>
-</Block>
-<Block genus-name="sleep" id="609">
-<Location>
-<X>248</X>
-<Y>621</Y>
-</Location>
-<BeforeBlockId>626</BeforeBlockId>
-<Sockets num-sockets="2">
-<BlockConnector con-block-id="610" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
-<BlockConnector con-block-id="611" connector-kind="socket" connector-type="boolean" init-type="boolean" label="WLAN RF" position-type="single"/>
-</Sockets>
-</Block>
-<Block genus-name="digital-high" id="611">
-<Location>
-<X>426</X>
-<Y>648</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="609" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
-</Plug>
-</Block>
-<Block genus-name="number" id="627">
-<Label>1000</Label>
-<Location>
-<X>392</X>
-<Y>594</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="626" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
 </Plug>
 </Block>
 <Block genus-name="GetDustHM330" id="591">
@@ -167,7 +111,7 @@
 <Y>203</Y>
 </Location>
 <BeforeBlockId>174</BeforeBlockId>
-<AfterBlockId>985</AfterBlockId>
+<AfterBlockId>609</AfterBlockId>
 <Sockets num-sockets="10">
 <BlockConnector con-block-id="810" connector-kind="socket" connector-type="string" init-type="string" label="Dev EUI" position-type="single"/>
 <BlockConnector con-block-id="811" connector-kind="socket" connector-type="string" init-type="string" label="App EUI" position-type="single"/>
@@ -233,7 +177,7 @@
 </Plug>
 </Block>
 <Block genus-name="number" id="634">
-<Label>15</Label>
+<Label>0</Label>
 <Location>
 <X>387</X>
 <Y>111</Y>
