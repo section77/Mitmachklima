@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
 <Pages collapsible-pages="yes" drawer-with-page="yes">
-<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1440">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="3440">
 <PageBlocks>
+<Block genus-name="digital-low" id="1334">
+<Location>
+<X>387</X>
+<Y>135</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="633" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
+</Plug>
+</Block>
 <Block genus-name="sleep" id="609">
 <Location>
 <X>248</X>
@@ -164,17 +173,8 @@
 <AfterBlockId>1159</AfterBlockId>
 <Sockets num-sockets="2">
 <BlockConnector con-block-id="634" connector-kind="socket" connector-type="number" init-type="number" label="pin" position-type="single"/>
-<BlockConnector con-block-id="635" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Wert" position-type="single"/>
+<BlockConnector con-block-id="1334" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Wert" position-type="single"/>
 </Sockets>
-</Block>
-<Block genus-name="digital-high" id="635">
-<Location>
-<X>387</X>
-<Y>135</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="633" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
-</Plug>
 </Block>
 <Block genus-name="number" id="634">
 <Label>0</Label>
