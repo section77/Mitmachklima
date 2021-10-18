@@ -2,7 +2,7 @@
 
 ## LoRaWAN
 
-LoRaWAN, kurz für "Long Range Wide Access Network", ist ein energiearmes Funknetzwerk für das Internet der Dinge. Meist akkubetriebene Sensoren senden ihre Messwerte in regelmäßigen Abständen an sogenannte LoRaWAN-Gateways, welche die empfangenen Datenpakete an einen zentralen LoRaWAN-Server weiterleiten. Die Reichweite erstreckt sich von 2 km in Stadtgebieten bis zu 40 km in ländlichen Gebieten. Die Batterielebensdauer eines Sensors kann je nach Konfiguration mehrere Jahre betragen. LoRaWAN arbeitet mit nicht lizenzierten Funk-Frequenz-Bändern (meist 868 MHz), das heißt es erfolgt keine Nutzungseinschränkung durch die Bundesnetzagentur und eine Anmeldung von Sensoren oder Gateways ist nicht notwendig.
+LoRaWAN, kurz für "Long Range Wide Area Network", ist ein energiearmes Funknetzwerk für das Internet der Dinge. Meist akkubetriebene Sensoren senden ihre Messwerte in regelmäßigen Abständen an sogenannte LoRaWAN-Gateways, welche die empfangenen Datenpakete an einen zentralen LoRaWAN-Server weiterleiten. Die Reichweite erstreckt sich von 2 km in Stadtgebieten bis zu 40 km in ländlichen Gebieten. Die Batterielebensdauer eines Sensors kann je nach Konfiguration mehrere Jahre betragen. LoRaWAN arbeitet mit nicht lizenzierten Funk-Frequenz-Bändern (meist 868 MHz), das heißt es erfolgt keine Nutzungseinschränkung durch die Bundesnetzagentur und eine Anmeldung von Sensoren oder Gateways ist nicht notwendig.
 
 ## The Things Network
 
