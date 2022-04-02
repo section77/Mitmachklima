@@ -56,19 +56,19 @@ void sendSenseMap(String server, float measurement, int digits, String SENSEBOX_
   Serial.println(payload); //Print request response payload
   http.end(); //Close connection
 }
-int Temperatur = 0 ;
+float Temperatur = 0.0 ;
 // Marshall Tylor@sparkfun  https://github.com/sparkfun/SparkFun_BME280_Arduino_Library
 BME280 boschBME280; // Objekt Bosch Umweltsensor
 int boschBME280_ready = 0; // Objekt Bosch Umweltsensor
-int relLuftfeuchte = 0 ;
-int Luftdruck = 0 ;
+float relLuftfeuchte = 0.0 ;
+float Luftdruck = 0.0 ;
 extern "C" {  // zur Nutzung der speziellen ESP-Befehle wie Deep Sleep
 #include "user_interface.h"
 }
 
 
 void setup(){ // Einmalige Initialisierung
-  boschBME280.setI2CAddress(0x76);  // change I2C address
+  boschBME280.setI2CAddress(0x76);  // change I2C address; muss in Arduino (!) im Block "setup" ganz nach oben!
   pinMode( 0 , OUTPUT);
   Serial.begin(115200);
   Wire.begin(); // ---- Initialisiere den I2C-Bus 
