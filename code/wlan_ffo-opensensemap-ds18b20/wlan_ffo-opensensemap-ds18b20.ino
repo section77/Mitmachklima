@@ -82,7 +82,4 @@ void loop() { // Kontinuierliche Wiederholung
    }
   
   delay(600000);
-// ESP.deepSleep(30e6, WAKE_RF_DEFAULT); 
-//1800000
-//ESP.deepSleep( (long)10000*1000UL,WAKE_RF_DEFAULT);//Tiefschlaf, danach Reset und von vorn
 } //end loop
